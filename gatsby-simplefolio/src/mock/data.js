@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'SelenaLi_Spring21.pdf', // if no resume, the button will not show up
+  resume: 'https://github.com/selenali07/resume/raw/main/SelenaLi_Spring21.pdf', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
