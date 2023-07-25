@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: '/SelenaLi_Spring21.pdf', // if no resume, the button will not show up
+  resume: 'https://github.com/selenali07/resume/raw/main/SelenaLiResume2023.pdf', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -31,7 +31,8 @@ export const projectsData = [
     img: 'pawmates.png',
     title: 'Pawmates',
     info: 'Pet Adoption Website (React / Firebase / Bootstrap)',
-    info2: 'Utilized PetFinder API to create tinder-like web application matching adoptable pets to potential owners',
+    info2:
+      'Utilized PetFinder API to create tinder-like web application matching adoptable pets to potential owners',
     url: 'https://pawmates-72d84.web.app/',
     repo: 'https://github.com/selenali07/pawmates', // if no repo, the button will not show up
   },
@@ -40,7 +41,8 @@ export const projectsData = [
     img: 'chpi.png',
     title: 'Focus Franklin',
     info: 'Site created using React and Firebase with UNC Web Development Club',
-    info2: 'Created in partnership with Carolina Homelessness prevention initiative, a UNC organization aiming to tackle the growing issue of Homelessness in America.',
+    info2:
+      'Created in partnership with Carolina Homelessness prevention initiative, a UNC organization aiming to tackle the growing issue of Homelessness in America.',
     url: 'https://focusonfranklin.org/homelessness',
     repo: 'https://github.com/web-dev-carolina/CHPI',
   },
@@ -57,10 +59,10 @@ export const projectsData = [
     img: 'twitter.png',
     title: 'Twitter Clone',
     info: 'Class Project for COMP 426: Modern Web Programming (JQUERY)',
-    info2: 'Twitter-like interface allowing users to display, manage, and like tweets through AJAX and JSON request to classroom RESTful back-end API server',
+    info2:
+      'Twitter-like interface allowing users to display, manage, and like tweets through AJAX and JSON request to classroom RESTful back-end API server',
     repo: 'https://github.com/selenali07/twitter-426', // if no repo, the button will not show up
   },
-  
 ];
 
 // CONTACT DATA
