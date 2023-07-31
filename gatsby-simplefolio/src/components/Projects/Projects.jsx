@@ -2,10 +2,10 @@ import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
-import Carousel from 'react-bootstrap/Carousel';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -108,54 +108,79 @@ const Projects = () => {
                     </div>
                   </Fade>
                 </Col>
-              </Row>);
-            
+              </Row>
+            );
           })}
           <h1 className="section-title">Small Classroom projects</h1>
           <Carousel>
-                  <Carousel.Item>
-                        <img width={800} height={500} alt="900x500" src="https://i.ibb.co/YjmPpdk/Screen-Shot-2021-03-01-at-1-00-32-AM.png"/>
-                        <Carousel.Caption style = {{"opacity": 0.9}} className = "bg-dark pt-10">
-                            <h3>2048 Replica</h3>
-                            <p>Comp 426 - Modern Programming Language Concepts (JQuery/CSS)</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width={800} height={500} alt="900x500" src="https://i.postimg.cc/rm4cXq0T/Screen-Shot-2020-02-24-at-5-36-52-PM.png"/>
-                        <Carousel.Caption style = {{"opacity": 0.9}} className = "bg-dark pt-10">
-                            <h3>Restaurant Site Template</h3>
-                            <p>Comp 126 - Practical Web Design and Development for Everyone (HTML/CSS)</p>
-                        </Carousel.Caption>
-                    </Carousel.Item> 
-                    <Carousel.Item>
-                        <img width={800} height={500} alt="900x500" src="https://i.ibb.co/RPhMVT0/126.png"/>
-                        <Carousel.Caption style = {{"opacity": 0.9}} className = "bg-dark pt-10">
-                            <h3>Best Electronics Site Template</h3>
-                            <p>Comp 126 - Practical Web Design and Development for Everyone (HTML/CSS)</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>  
-                    <Carousel.Item>
-                        <img width={800} height={500} alt="900x500" src="https://i.postimg.cc/kgG0P7zH/Screen-Shot-2020-02-24-at-5-44-18-PM.png"/>
-                        <Carousel.Caption style = {{"opacity": 0.9}} className = "bg-dark pt-10">
-                            <h3>Conways Game of Life</h3>
-                            <p>Comp 401 - Foundations of Programming (Java / MVC)</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width={500} height={500} alt="900x500" src="https://i.postimg.cc/44t4jQVc/Screen-Shot-2020-02-24-at-5-41-09-PM.png"/>
-                        <Carousel.Caption style = {{"opacity": 0.9}} className = "bg-dark pt-10">
-                            <h3>Connect 4</h3>
-                            <p>Comp 401 - Foundations of Programming</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width={500} height={500} alt="900x500" src="https://i.postimg.cc/J08ffZC3/Screen-Shot-2020-02-24-at-5-42-44-PM.png"/>
-                        <Carousel.Caption style = {{"opacity": 0.9}} className = "bg-dark pt-10">
-                            <h3>Othello / Reversi</h3>
-                            <p>Comp 401 - Foundations of Programming </p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
+            <Carousel.Item>
+              <img
+                width={800}
+                height={500}
+                alt="900x500"
+                src="https://i.ibb.co/YjmPpdk/Screen-Shot-2021-03-01-at-1-00-32-AM.png"
+              />
+              <Carousel.Caption style={{ opacity: 0.9 }} className="bg-dark pt-10">
+                <h3>2048 Replica</h3>
+                <p>Comp 426 - Modern Programming Language Concepts (JQuery/CSS)</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                width={800}
+                height={500}
+                alt="900x500"
+                src="https://i.postimg.cc/rm4cXq0T/Screen-Shot-2020-02-24-at-5-36-52-PM.png"
+              />
+              <Carousel.Caption style={{ opacity: 0.9 }} className="bg-dark pt-10">
+                <h3>Restaurant Site Template</h3>
+                <p>Comp 126 - Practical Web Design and Development for Everyone (HTML/CSS)</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img width={800} height={500} alt="900x500" src="https://i.ibb.co/RPhMVT0/126.png" />
+              <Carousel.Caption style={{ opacity: 0.9 }} className="bg-dark pt-10">
+                <h3>Best Electronics Site Template</h3>
+                <p>Comp 126 - Practical Web Design and Development for Everyone (HTML/CSS)</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                width={800}
+                height={500}
+                alt="900x500"
+                src="https://i.postimg.cc/kgG0P7zH/Screen-Shot-2020-02-24-at-5-44-18-PM.png"
+              />
+              <Carousel.Caption style={{ opacity: 0.9 }} className="bg-dark pt-10">
+                <h3>Conways Game of Life</h3>
+                <p>Comp 401 - Foundations of Programming (Java / MVC)</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                width={500}
+                height={500}
+                alt="900x500"
+                src="https://i.postimg.cc/44t4jQVc/Screen-Shot-2020-02-24-at-5-41-09-PM.png"
+              />
+              <Carousel.Caption style={{ opacity: 0.9 }} className="bg-dark pt-10">
+                <h3>Connect 4</h3>
+                <p>Comp 401 - Foundations of Programming</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                width={500}
+                height={500}
+                alt="900x500"
+                src="https://i.postimg.cc/J08ffZC3/Screen-Shot-2020-02-24-at-5-42-44-PM.png"
+              />
+              <Carousel.Caption style={{ opacity: 0.9 }} className="bg-dark pt-10">
+                <h3>Othello / Reversi</h3>
+                <p>Comp 401 - Foundations of Programming </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
         </div>
       </Container>
     </section>
